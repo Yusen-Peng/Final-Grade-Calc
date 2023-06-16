@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#03A9F4</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:visibility">visible</item>
+    </style>
+</resources>

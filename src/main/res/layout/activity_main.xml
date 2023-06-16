@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prompt3"
+    tools:context=".MainActivity"
+    style="@style/Main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center">
+
+        <TextView
+            android:id="@+id/askCurrentGrade"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="500dp"
+            android:background="#2196F3"
+            android:fadingEdge="horizontal"
+            android:text="What is your current grade?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <TextView
+            android:id="@+id/askWorth"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="300dp"
+            android:background="#2196F3"
+            android:fadingEdge="horizontal"
+            android:text="How much is your final worth of your grade?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <TextView
+            android:id="@+id/Intro"
+            android:layout_width="413dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="650dp"
+            android:background="#DCC00F"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:text="Yusen's Final grade calculator"
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/RunIt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="318dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="283dp"
+            android:onClick="Execute"
+            android:text="Calculate!"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Intro" />
+
+        <EditText
+            android:id="@+id/goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="282dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="text"
+            android:text="Please enter here"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Intro"
+            app:layout_constraintVertical_bias="0.149" />
+
+        <EditText
+            android:id="@+id/worth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="282dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="text"
+            android:text="Please enter here"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Intro"
+            app:layout_constraintVertical_bias="0.149" />
+
+        <EditText
+            android:id="@+id/currentGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="282dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="text"
+            android:text="Please enter here"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Intro"
+            app:layout_constraintVertical_bias="0.149" />
+
+        <TextView
+            android:id="@+id/askGoal"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="430dp"
+            android:background="#2196F3"
+            android:fadingEdge="horizontal"
+            android:text="What is your goal for the final score?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="264dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="520dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="192dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
